@@ -1,0 +1,447 @@
+//quienes homos Home//
+.container-fluid{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+.quienes{
+	margin: 8px 40px 8px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: $border-radius;
+    box-shadow:$box-shadows;
+    padding: 8px;
+    width: 100%;
+
+		h1.titulo  {
+			text-align: center;
+			font-family: $nunito;
+			fonn-size:$titulos;
+			color:$mirosa;
+
+		}
+		p.quiene-somos{
+			display: flex;
+    		justify-content: center;
+    		align-items: center;
+			font-family:$nunito;
+		    font-size: $bajada;
+		    font-weight: 200;
+
+		}
+}
+
+}
+
+//QUE OFRECEOS//
+.ofecemos-ofrecemos{
+	width: 100%;
+	.contenedor-ofrecemos{
+		margin: 8px 16px;
+		padding:0;
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		
+			.columna2{
+				display: flex;
+				display: flex;
+				flex-direction:column;
+				justify-content:center;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 100%;
+				.sub-titulos{
+					display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    margin: 24px;
+				    font-size: 2rem;
+				    font-family: $nunito;
+				    color:$mirosa;
+				}
+				.card-container{
+					display: flex;
+				    flex-direction:row;
+				    justify-content:space-between;
+				    flex-wrap: wrap;
+				    align-items: center;
+				    width: 100%;
+
+					.card{
+						 display: flex;
+					    flex-direction:column;
+					    justify-content:center;
+					    align-items: center;
+					    width: 265px;
+					    padding: 8px;
+					    border-radius: 8px;
+					    box-shadow:0 0 10px 0 #cacaca;
+					    height: 400px;
+					    margin: 8px;
+					     &:hover{
+								    	background: #FFCC01;
+	    								
+								    }
+						img{}
+						.card-body{
+							.h4{
+								font-size: 1.3rem;
+    							text-align: center;
+    							font-family: $nunito;
+
+							}
+							.card-text-bajada{
+
+							}
+						}
+					}
+				}
+			}	
+
+
+			}
+
+
+}
+
+//TESTIMONIOS//
+.testimonios{
+	width: 100%;
+	margin-top:16px;
+	display:flex;
+	justfy-content:center;
+	align-iten:center;
+	flex-direction:column;
+
+		div.row.containe-tes{
+			display: flex;
+			width: 100%;
+			justfy-content:center;
+			align-iten:center;
+
+				.columna3{
+					display: flex;
+					width: 100%;
+					flex-direction:column;
+					justfy-content:center;
+					align-iten:center;
+
+						 h2.sub-titulos {
+							display: flex;
+							justify-content: center;
+	    					align-items: center;
+	    					font-size: 2rem;
+					    	font-family: $nunito;
+					    	color:$mirosa;
+						}
+
+						.aliniar-test{
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: space-between;
+
+							.card-t{
+								display: flex;
+							    justify-content: center;
+							    align-items: center;
+							    width: 400px;
+							    height: 600px;
+							    margin:0 8px;
+							    flex-direction:column;
+
+							    	.card-img-top{
+
+							    	}
+							    	.card-body-m{
+							    		background-color: $mivioleta;
+									    display: flex;
+									    justify-content: center;
+									    align-items: center;
+									    height: auto;
+									    width: 400px;
+									    height: 170px;
+									    flex-direction: column;
+									    padding: $padding2;
+									    color: $blanco;
+									    font-family:$nunito; 
+							    	}
+							}
+						}
+
+
+				}
+		}
+}
+
+
+
+ @media only screen and (min-width:320px) and (max-width: 768px){
+	.container-fluid{
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+	.quienes{
+		margin: 8px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+	    border-radius: $border-radius;
+	    box-shadow:$box-shadows;
+	    padding: 8px;
+	    width: 100%;
+
+			h1.titulo  {
+				text-align: center;
+				font-family: $nunito;
+				fonn-size:$titulos;
+				color:$mirosa;
+
+			}
+			p.quiene-somos{
+				display: flex;
+	    		justify-content: center;
+	    		align-items: center;
+				font-family:$nunito;
+			    font-size: $bajada;
+			    font-weight: 200;
+
+			}
+	}
+
+	}
+
+//QUE OFRECEOS//
+.ofecemos-ofrecemos{
+	width: 100%;
+	margin: 0;
+	.contenedor-ofrecemos{
+		margin: 0px;
+		padding:0;
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		
+			.columna2{
+				display: flex;
+				display: flex;
+				flex-direction:column;
+				justify-content:center;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 100%;
+				margin: 0;
+				.sub-titulos{
+					display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    margin:8px;
+				    font-size: 2rem;
+				    font-family: $nunito;
+				    color:$mirosa;
+				}
+				.card-container{
+					display: flex;
+				    flex-direction:column;
+				    justify-content:center;
+				    flex-wrap: wrap;
+				    align-items: center;
+				    width: 100%;
+				    margin: 0;
+
+					.card{
+						 display: flex;
+					    flex-direction:column;
+					    justify-content:center;
+					    align-items: center;
+					    width:100%;
+					    padding: 8px;
+					    border-radius: 8px;
+					    box-shadow:0 0 10px 0 #cacaca;
+					    height: auto;
+					    margin: 8px;
+					    flex-wrap: wrap;
+					     &:hover{
+								    	background: #FFCC01;
+	    								
+								    }
+						img{}
+						.card-body{
+							.h4{
+								font-size: 1.3rem;
+    							text-align: center;
+    							font-family: $nunito;
+
+							}
+							.card-text-bajada{
+
+							}
+						}
+					}
+				}
+			}	
+
+
+			}
+
+}
+//TESTIMONIOS//
+.testimonios{
+	width: 100%;
+	margin-top:8px;
+	display:flex;
+	justfy-content:center;
+	align-iten:center;
+	flex-direction:column;
+
+		div.row.containe-tes{
+			display: flex;
+			width: 100%;
+			justfy-content:center;
+			align-iten:center;
+
+				.columna3{
+					display: flex;
+					width: 100%;
+					flex-direction:column;
+					justfy-content:center;
+					align-iten:center;
+
+						 h2.sub-titulos {
+							display: flex;
+							justify-content: center;
+	    					align-items: center;
+	    					font-size: 2rem;
+					    	font-family: $nunito;
+					    	color:$mirosa
+					    	text-align: center;
+						}
+
+						.aliniar-test{
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: center;
+
+							.card-t{
+								display: flex;
+							    justify-content: center;
+							    align-items: center;
+							    width: 100%px;
+							    height: auto;
+							    margin: 0 8px;
+							    flex-direction:column;
+
+							    	.card-img-top{
+
+							    	}
+							    	.card-body-m{
+							    		background-color: $mivioleta;
+									    display: flex;
+									    justify-content: center;
+									    align-items: center;
+									    height: auto;
+									    width: 100%;
+									    height: auto;
+									    flex-direction: column;
+									    padding: $padding2;
+									    color: $blanco;
+									    font-family:$nunito; 
+							    	}
+							}
+						}
+
+
+				}
+		}
+}
+
+}
+
+ @media  only screen and (min-width:769px) and (max-width:1023px){
+ 	//QUE OFRECEOS//
+.ofecemos-ofrecemos{
+	width: 100%;
+	.contenedor-ofrecemos{
+		margin: 8px 16px;
+		padding:0;
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		
+			.columna2{
+				display: flex;
+				display: flex;
+				flex-direction:column;
+				justify-content:center;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 100%;
+				.sub-titulos{
+					display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    margin: 24px;
+				    font-size: 2rem;
+				    font-family: $nunito;
+				    color:$mirosa;
+				}
+				.card-container{
+					display: flex;
+				    flex-direction:row;
+				    justify-content:space-between;
+				    flex-wrap: wrap;
+				    align-items: center;
+				    width:100%;
+
+					.card{
+						display: flex;
+					    flex-direction:column;
+					    justify-content:center;
+					    align-items: center;
+					    width: 240px;
+					    padding: 8px;
+					    border-radius: 8px;
+					    box-shadow:0 0 10px 0 #cacaca;
+					    height: auto;
+					    
+
+					     &:hover{
+								    	background: #FFCC01;
+	    								
+								    }
+						img{}
+						.card-body{
+							.h4{
+								font-size: 1.3rem;
+    							text-align: center;
+    							font-family: $nunito;
+
+							}
+							.card-text-bajada{
+
+							}
+						}
+					}
+				}
+			}	
+
+
+			}
+
+
+}
+
+ }

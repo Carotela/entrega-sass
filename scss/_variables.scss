@@ -1,0 +1,29 @@
+//variables sass//
+//paleta de color//
+$mivioleta:#673398;
+$mirosa:#FF3366;
+$blanco:#fff;
+$negro:#FF3366;
+
+//Tipografias//
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700
+&family=Truculenta:wght@200;400;600&display=swap');
+
+$nunito:'Nunito', sans-serif;
+$truculenta:'Truculenta', sans-serif;
+$border-radius:8px;
+$box-shadows: 0 0 10px 0 #cacaca;
+$padding2: 8px;
+$padding1: 16px;
+$margin1: 16px 128px 16px 128px;
+
+.border-cards{
+	$border-radius:8px;
+	$box-shadows: 0 0 10px 0 #cacaca;
+}
+
+$titulos:5rem;
+$sub-titulos:3rem;
+$caption:2rem;
+$bajada:1.8rem;
+$texto:1rem;

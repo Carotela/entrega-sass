@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700\a&family=Truculenta:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&family=Truculenta:wght@200;400;600&display=swap");
+header {
+  background: #673398; }
+  header .row {
+    margin: 0;
+    width: 100%; }
+    header .row .navbar img.logo {
+      width: 100px;
+      height: 100px; }
+    header .row .navbar #navbarNav {
+      background: #673398;
+      display: flex;
+      justify-content: flex-end;
+      font-family: "Nunito", sans-serif; }
+      header .row .navbar #navbarNav ul li a:hover {
+        border-bottom: 2px solid yellow;
+        font-weight: 500; }
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 0 8px;
+    width: 100%;
+    flex-wrap: wrap; }
+    header .row .navbar img.logo {
+      width: 50px;
+      height: 50px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 0 8px;
+    width: 100%;
+    flex-wrap: wrap; }
+    header .row .navbar img.logo {
+      width: 100px;
+      height: 100px; } }
+
+.jumbotron {
+  width: 100%;
+  height: 667px;
+  position: relative;
+  background-image: url(../assets/img/banner-home.jpg);
+  background-size: 120%;
+  animation: movimiento  10s infinite linear alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  border-radius: none;
+  overflow: hidden; }
+
+@keyframes movimiento {
+  fron {
+    background-position: bottom left;
+    background-position: top left; }
+  to {
+    background-position: top right; } }
+
+.container-tex {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px;
+  font: "Nunito", sans-serif; }
+
+.tex-banner {
+  color: #fff;
+  font-size: 3.5rem;
+  padding: 8px;
+  font-weight: 600;
+  margin: auto;
+  font: "Nunito", sans-serif; }
+
+.bajada-banner {
+  font-size: 2rem;
+  color: #fff;
+  padding: 8px 0; }
+
+.tex {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 8px 0;
+  font-family: "Nunito", sans-serif; }
+
+.tex button {
+  background: #673398;
+  transition: all .3s ease;
+  padding: 16px 50px;
+  margin-left: 8px;
+  font-size: 16px;
+  border-style: none;
+  margin-top: 16px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  border-radius: 16px;
+  font: "Nunito", sans-serif;
+  text-decoration: none; }
+
+button a {
+  text-decoration: none;
+  color: #fff; }
+
+.tex button:hover {
+  background: #FF3366; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .jumbotron {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: 200%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: none; }
+    .jumbotron .row.banner {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .jumbotron .row.banner .container-tex .tex .tex-banner {
+        font-size: 3rem;
+        display: felx;
+        jusify-content: center;
+        aling-items: center;
+        width: 100%; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .jumbotron {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: 150%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: none; }
+    .jumbotron .row .container-tex .tex .tex-banner {
+      display: felx;
+      font-size: 4rem;
+      jusify-content: center;
+      aling-items: center;
+      width: 100%; } }
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .container-fluid .quienes {
+    margin: 8px 40px 8px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 #cacaca;
+    padding: 8px;
+    width: 100%; }
+    .container-fluid .quienes h1.titulo {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      fonn-size: 5rem;
+      color: #FF3366; }
+    .container-fluid .quienes p.quiene-somos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 200; }
+
+.ofecemos-ofrecemos {
+  width: 100%; }
+  .ofecemos-ofrecemos .contenedor-ofrecemos {
+    margin: 8px 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; }
+    .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 {
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%; }
+      .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .sub-titulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+        font-size: 2rem;
+        font-family: "Nunito", sans-serif;
+        color: #FF3366; }
+      .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 265px;
+          padding: 8px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px 0 #cacaca;
+          height: 400px;
+          margin: 8px; }
+          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
+            background: #FFCC01; }
+          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
+            font-size: 1.3rem;
+            text-align: center;
+            font-family: "Nunito", sans-serif; }
+
+.testimonios {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  justfy-content: center;
+  align-iten: center;
+  flex-direction: column; }
+  .testimonios div.row.containe-tes {
+    display: flex;
+    width: 100%;
+    justfy-content: center;
+    align-iten: center; }
+    .testimonios div.row.containe-tes .columna3 {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justfy-content: center;
+      align-iten: center; }
+      .testimonios div.row.containe-tes .columna3 h2.sub-titulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-family: "Nunito", sans-serif;
+        color: #FF3366; }
+      .testimonios div.row.containe-tes .columna3 .aliniar-test {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 400px;
+          height: 600px;
+          margin: 0 8px;
+          flex-direction: column; }
+          .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m {
+            background-color: #673398;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 400px;
+            height: 170px;
+            flex-direction: column;
+            padding: 8px;
+            color: #fff;
+            font-family: "Nunito", sans-serif; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .container-fluid .quienes {
+      margin: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 8px;
+      box-shadow: 0 0 10px 0 #cacaca;
+      padding: 8px;
+      width: 100%; }
+      .container-fluid .quienes h1.titulo {
+        text-align: center;
+        font-family: "Nunito", sans-serif;
+        fonn-size: 5rem;
+        color: #FF3366; }
+      .container-fluid .quienes p.quiene-somos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 200; }
+  .ofecemos-ofrecemos {
+    width: 100%;
+    margin: 0; }
+    .ofecemos-ofrecemos .contenedor-ofrecemos {
+      margin: 0px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%; }
+      .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin: 0; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .sub-titulos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 8px;
+          font-size: 2rem;
+          font-family: "Nunito", sans-serif;
+          color: #FF3366; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 100%;
+          margin: 0; }
+          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px 0 #cacaca;
+            height: auto;
+            margin: 8px;
+            flex-wrap: wrap; }
+            .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
+              background: #FFCC01; }
+            .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
+              font-size: 1.3rem;
+              text-align: center;
+              font-family: "Nunito", sans-serif; }
+  .testimonios {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    justfy-content: center;
+    align-iten: center;
+    flex-direction: column; }
+    .testimonios div.row.containe-tes {
+      display: flex;
+      width: 100%;
+      justfy-content: center;
+      align-iten: center; }
+      .testimonios div.row.containe-tes .columna3 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justfy-content: center;
+        align-iten: center; }
+        .testimonios div.row.containe-tes .columna3 h2.sub-titulos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          font-family: "Nunito", sans-serif;
+          color: #FF3366; }
+        .testimonios div.row.containe-tes .columna3 .aliniar-test {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; }
+          .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%px;
+            height: auto;
+            margin: 0 8px;
+            flex-direction: column; }
+            .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m {
+              background-color: #673398;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: auto;
+              width: 100%;
+              height: auto;
+              flex-direction: column;
+              padding: 8px;
+              color: #fff;
+              font-family: "Nunito", sans-serif; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .ofecemos-ofrecemos {
+    width: 100%; }
+    .ofecemos-ofrecemos .contenedor-ofrecemos {
+      margin: 8px 16px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%; }
+      .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .sub-titulos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 24px;
+          font-size: 2rem;
+          font-family: "Nunito", sans-serif;
+          color: #FF3366; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 100%; }
+          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px 0 #cacaca;
+            height: auto; }
+            .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
+              background: #FFCC01; }
+            .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
+              font-size: 1.3rem;
+              text-align: center;
+              font-family: "Nunito", sans-serif; } }
+
+footer {
+  background-color: #673398;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+  margin-top: 16px;
+  width: 100%;
+  flex-wrap: wrap; }
+  footer .foo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .foo .columna .contactos {
+      font-family: "Nunito", sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #fff; }
+      footer .foo .columna .contactos h2.subtitulos {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 200; }
+    footer .foo .columna .alinear-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; }
+      footer .foo .columna .alinear-footer .logo-foo img {
+        width: 100px;
+        height: 100px; }
+      footer .foo .columna .alinear-footer .contactos-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 16px;
+        flex-wrap: wrap; }
+        footer .foo .columna .alinear-footer .contactos-nav a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-decoration: none;
+          color: #fff;
+          padding: 8px; }
+          footer .foo .columna .alinear-footer .contactos-nav a img {
+            width: 35px;
+            height: 35px;
+            padding-bottom: 8px; }
+            footer .foo .columna .alinear-footer .contactos-nav a img h5 {
+              color: #fff; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 8px;
+    margin-top: 8px; }
+    footer .contactos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      footer .contactos .subtitulos {
+        font-family: "Nunito", sans-serif;
+        font-size: 3rem;
+        font-weight: 200;
+        color: #fff;
+        text-align: center; }
+    footer .alinear-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%; }
+      footer .alinear-footer .logo-foo img {
+        width: 50px;
+        height: 50px; }
+      footer .alinear-footer .contactos-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        font-family: "Nunito", sans-serif; }
+        footer .alinear-footer .contactos-nav .icono {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 8px;
+          text-decoration: none;
+          color: #fff; }
+          footer .alinear-footer .contactos-nav .icono img {
+            width: 25px;
+            height: 25px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px; }
+    footer .foo {
+      margin: 8px; }
+      footer .foo .columna .contactos {
+        margin: 8px;
+        font-size: 2rem; }
+      footer .foo .columna .alinear-footer .logo-foo img {
+        width: 100px;
+        height: 100px; }
+      footer .foo .columna .alinear-footer .contactos-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%; } }

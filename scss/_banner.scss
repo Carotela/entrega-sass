@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&family=Truculenta:wght@200;400;600&display=swap');
+$nunito:'Nunito', sans-serif;
+$truculenta:'Truculenta', sans-serif;
+
+
+.jumbotron{
+    width: 100%;
+    height: 667px;
+    position: relative;
+    background-image:url(../assets/img/banner-home.jpg);
+    background-size: 120%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: none;
+    overflow: hidden;
+    }
+
+@keyframes movimiento{
+
+    fron{
+        background-position: bottom left;
+        background-position: top left;
+    } 
+    to{
+        background-position: top right;
+    }
+    
+    }
+ 
+
+
+.container-tex{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start ;
+    padding: 8px;
+    font:$nunito;
+
+    
+    }
+
+.tex-banner{
+    color:$blanco;
+    font-size: 3.5rem;
+    padding: 8px;
+    font-weight: 600;
+    margin: auto;
+    font:$nunito;
+    }
+
+.bajada-banner{
+    font-size: 2rem;
+    color:$blanco;
+    padding: 8px 0;
+
+   
+    }
+
+.tex{
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    color: $blanco;
+    margin-bottom: 8px 0;
+    font-family:$nunito;
+    
+    }
+
+.tex button{
+    background: $mivioleta;
+    transition: all .3s ease;
+    padding: 16px 50px;
+    margin-left: 8px;
+    font-size: 16px;
+    border-style: none;
+    margin-top:16px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    border-radius: 16px;
+    font:$nunito;
+    text-decoration: none;
+    }
+
+button a{
+    text-decoration: none;
+    color:$blanco;
+}
+
+.tex button:hover{
+    background: $mirosa;
+    }
+
+ @media only screen and (min-width:320px) and (max-width: 768px){
+    .jumbotron{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: 200%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: none;
+
+        .row.banner{
+            width: 100%;
+            display:flex;
+            justify-content:center;
+
+            .container-tex{
+                .tex{
+                    .tex-banner{
+                        font-size: 3rem;
+                        display: felx;
+                        jusify-content:center;
+                        aling-items:center;
+                        width: 100%;
+                    } 
+
+                }
+            }
+        }
+    }
+ }
+  
+   @media  only screen and (min-width:769px) and (max-width:1023px){
+    .jumbotron{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: 150%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: none;
+        .row{
+            .container-tex{
+                .tex{
+                    .tex-banner{
+                        display: felx;
+                        font-size: 4rem;
+                        jusify-content:center;
+                        aling-items:center;
+                        width: 100%;
+                    } 
+
+                }
+            }
+        }
+    }
+ }
+
+  
