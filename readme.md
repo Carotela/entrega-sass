@@ -1,1 +1,1 @@
-Primera implementacion de Sass en un proyecto nuevo
+Primera implementacion de Sass map-get en main staff, y un mixin en seccsion testimonios en index y en staff en card de fundador. trate de ponerlo en footer y en header con la class que cree pero no me lo tomo.

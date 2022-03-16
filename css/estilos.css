@@ -1,45 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700\a&family=Truculenta:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700 &family=Truculenta:wght@200;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&family=Truculenta:wght@200;400;600&display=swap");
-header {
-  background: #673398; }
-  header .row {
+.card-body-m {
+  color: #fff;
+  background-color: #673398; }
+
+.titulos {
+  font-size: 3rem;
+  font-weight: 400; }
+
+.sub-titulos {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 8px; }
+
+header.header {
+  background: #673398;
+  margin: 0; }
+  header.header .row {
     margin: 0;
     width: 100%; }
-    header .row .navbar img.logo {
+    header.header .row .navbar img.logo {
       width: 100px;
       height: 100px; }
-    header .row .navbar #navbarNav {
+    header.header .row .navbar #navbarNav {
       background: #673398;
       display: flex;
       justify-content: flex-end;
       font-family: "Nunito", sans-serif; }
-      header .row .navbar #navbarNav ul li a:hover {
+      header.header .row .navbar #navbarNav ul li a:hover {
         border-bottom: 2px solid yellow;
-        font-weight: 500; }
+        font-weight: 500;
+        width: auto; }
 
 @media only screen and (max-width: 768px) {
-  header {
+  header.header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    margin: 0 8px;
     width: 100%;
     flex-wrap: wrap; }
-    header .row .navbar img.logo {
+    header.header .row .navbar img.logo {
       width: 50px;
-      height: 50px; } }
+      height: 50px; }
+    header.header .row #navbarNav {
+      background: #673398;
+      display: flex;
+      justify-content: flex-end;
+      font-family: "Nunito", sans-serif; }
+      header.header .row #navbarNav ul li a:hover {
+        background-color: #FF3366; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  header {
+  header.header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    margin: 0 8px;
     width: 100%;
     flex-wrap: wrap; }
-    header .row .navbar img.logo {
+    header.header .row .navbar img.logo {
       width: 100px;
       height: 100px; } }
 
@@ -55,7 +75,8 @@ header {
   align-items: center;
   background-repeat: no-repeat;
   border-radius: none;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 32px; }
 
 @keyframes movimiento {
   fron {
@@ -82,10 +103,11 @@ header {
   margin: auto;
   font: "Nunito", sans-serif; }
 
-.bajada-banner {
+h3.bajada-banner {
   font-size: 2rem;
   color: #fff;
-  padding: 8px 0; }
+  padding: 8px 0;
+  font: "Nunito", sans-serif; }
 
 .tex {
   width: 100%;
@@ -164,9 +186,10 @@ button a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 32px; }
   .container-fluid .quienes {
-    margin: 8px 40px 8px 40px;
+    margin: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,23 +198,28 @@ button a {
     box-shadow: 0 0 10px 0 #cacaca;
     padding: 8px;
     width: 100%; }
-    .container-fluid .quienes h1.titulo {
-      text-align: center;
+    .container-fluid .quienes h1.titulos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: "Nunito", sans-serif;
       fonn-size: 5rem;
-      color: #FF3366; }
+      color: #FF3366;
+      margin-bottom: 16px; }
     .container-fluid .quienes p.quiene-somos {
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "Nunito", sans-serif;
       font-size: 1.8rem;
-      font-weight: 200; }
+      font-weight: 200;
+      margin-top: 8px; }
 
 .ofecemos-ofrecemos {
-  width: 100%; }
+  width: 100%;
+  margin: 32px 0px; }
   .ofecemos-ofrecemos .contenedor-ofrecemos {
-    margin: 8px 16px;
+    margin: 16px 0px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -212,33 +240,36 @@ button a {
         justify-content: center;
         align-items: center;
         margin: 24px;
-        font-size: 2rem;
         font-family: "Nunito", sans-serif;
-        color: #FF3366; }
-      .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
+        color: #FF3366;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding: 8px; }
+    .ofecemos-ofrecemos .contenedor-ofrecemos .card-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 16px; }
+      .ofecemos-ofrecemos .contenedor-ofrecemos .card-container .card {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100%; }
-        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 265px;
-          padding: 8px;
-          border-radius: 8px;
-          box-shadow: 0 0 10px 0 #cacaca;
-          height: 400px;
-          margin: 8px; }
-          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
-            background: #FFCC01; }
-          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
-            font-size: 1.3rem;
-            text-align: center;
-            font-family: "Nunito", sans-serif; }
+        width: 265px;
+        padding: 8px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px 0 #cacaca;
+        height: 400px;
+        margin: 8px; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .card-container .card:hover {
+          background: #FFCC01; }
+        .ofecemos-ofrecemos .contenedor-ofrecemos .card-container .card .card-body .h4 {
+          font-size: 1.3rem;
+          text-align: center;
+          font-family: "Nunito", sans-serif; }
 
 .testimonios {
   width: 100%;
@@ -246,56 +277,68 @@ button a {
   display: flex;
   justfy-content: center;
   align-iten: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 32px; }
   .testimonios div.row.containe-tes {
     display: flex;
-    width: 100%;
-    justfy-content: center;
-    align-iten: center; }
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; }
     .testimonios div.row.containe-tes .columna3 {
-      display: flex;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
-      justfy-content: center;
-      align-iten: center; }
-      .testimonios div.row.containe-tes .columna3 h2.sub-titulos {
+      font-family: "Nunito", sans-serif; }
+      .testimonios div.row.containe-tes .columna3 .sub-titulos {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
-        font-family: "Nunito", sans-serif;
-        color: #FF3366; }
+        color: #FF3366;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding: 8px;
+        margin: 24px, 0px; }
       .testimonios div.row.containe-tes .columna3 .aliniar-test {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; }
+        justify-content: space-between;
+        width: 100%; }
         .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 400px;
+          width: 320px;
           height: 600px;
           margin: 0 8px;
           flex-direction: column; }
+          .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-img-top {
+            width: 320px; }
           .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m {
             background-color: #673398;
             display: flex;
             justify-content: center;
             align-items: center;
             height: auto;
-            width: 400px;
+            width: 320px;
             height: 170px;
             flex-direction: column;
             padding: 8px;
             color: #fff;
-            font-family: "Nunito", sans-serif; }
+            font-family: "Nunito", sans-serif;
+            transition: all 500ms ease; }
+            .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m:hover {
+              background-color: #FF3366; }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .container-fluid {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 8px 0px; }
     .container-fluid .quienes {
       margin: 8px;
       display: flex;
@@ -325,18 +368,17 @@ button a {
       margin: 0px;
       padding: 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      flex-wrap: wrap;
       align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
       width: 100%; }
       .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 {
         display: flex;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
         align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
         margin: 0; }
         .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .sub-titulos {
@@ -349,17 +391,16 @@ button a {
           color: #FF3366; }
         .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
           display: flex;
-          flex-direction: column;
           justify-content: center;
-          flex-wrap: wrap;
           align-items: center;
+          flex-wrap: wrap;
           width: 100%;
           margin: 0; }
           .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             width: 100%;
             padding: 8px;
             border-radius: 8px;
@@ -368,112 +409,189 @@ button a {
             margin: 8px;
             flex-wrap: wrap; }
             .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
-              background: #FFCC01; }
+              background: #FF3366; }
             .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
               font-size: 1.3rem;
-              text-align: center;
+              align-items: center;
               font-family: "Nunito", sans-serif; }
   .testimonios {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 16px;
+    justify-content: center;
     display: flex;
-    justfy-content: center;
-    align-iten: center;
-    flex-direction: column; }
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    flex-wrap: wrap; }
     .testimonios div.row.containe-tes {
+      justify-content: center;
       display: flex;
+      align-items: center;
       width: 100%;
-      justfy-content: center;
-      align-iten: center; }
+      flex-wrap: wrap; }
       .testimonios div.row.containe-tes .columna3 {
-        display: flex;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        justfy-content: center;
-        align-iten: center; }
-        .testimonios div.row.containe-tes .columna3 h2.sub-titulos {
+        font-family: "Nunito", sans-serif; }
+        .testimonios div.row.containe-tes .columna3 .sub-titulos {
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 2rem;
-          font-family: "Nunito", sans-serif;
-          color: #FF3366; }
+          color: #FF3366;
+          font-size: 2.5rem;
+          font-weight: 400;
+          padding: 8px;
+          margin: 16px, 0px;
+          text-align: center; }
         .testimonios div.row.containe-tes .columna3 .aliniar-test {
           display: flex;
+          justify-content: center;
+          align-items: center;
           flex-wrap: wrap;
-          justify-content: center; }
+          width: 100%; }
           .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%px;
+            width: 304px;
             height: auto;
             margin: 0 8px;
             flex-direction: column; }
+            .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-img-top {
+              width: 320px; }
             .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m {
               background-color: #673398;
               display: flex;
               justify-content: center;
               align-items: center;
               height: auto;
-              width: 100%;
-              height: auto;
+              width: 320px;
+              height: 170px;
               flex-direction: column;
               padding: 8px;
               color: #fff;
-              font-family: "Nunito", sans-serif; } }
+              font-family: "Nunito", sans-serif;
+              transition: all 500ms ease; }
+              .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m:hover {
+                background-color: #FF3366; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  .ofecemos-ofrecemos {
-    width: 100%; }
-    .ofecemos-ofrecemos .contenedor-ofrecemos {
+  .container-fluid.ofecemos-ofrecemos {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos {
       margin: 8px 16px;
       padding: 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      flex-wrap: wrap;
       align-items: center;
+      flex-direction: column;
       width: 100%; }
-      .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 {
+      .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos .columna2 {
         display: flex;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
         align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%; }
-        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .sub-titulos {
+        .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos .columna2 h2.sub-titulos {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 24px;
+          width: 100%;
           font-size: 2rem;
           font-family: "Nunito", sans-serif;
           color: #FF3366; }
-        .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
+        .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container {
           display: flex;
+          align-items: center;
           flex-direction: row;
           justify-content: space-between;
           flex-wrap: wrap;
-          align-items: center;
           width: 100%; }
-          .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
+          .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             width: 240px;
             padding: 8px;
             border-radius: 8px;
             box-shadow: 0 0 10px 0 #cacaca;
-            height: auto; }
-            .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
+            height: auto;
+            margin: 8px 0px; }
+            .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card:hover {
               background: #FFCC01; }
-            .ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
+            .container-fluid.ofecemos-ofrecemos .contenedor-ofrecemos .columna2 .card-container .card .card-body .h4 {
               font-size: 1.3rem;
               text-align: center;
-              font-family: "Nunito", sans-serif; } }
+              font-family: "Nunito", sans-serif; }
+  .testimonios {
+    width: 100%;
+    margin-top: 16px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    flex-wrap: wrap; }
+    .testimonios div.row.containe-tes {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap; }
+      .testimonios div.row.containe-tes .columna3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Nunito", sans-serif; }
+        .testimonios div.row.containe-tes .columna3 .sub-titulos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #FF3366;
+          font-size: 2.5rem;
+          font-weight: 400;
+          padding: 8px;
+          margin: 16px, 0px;
+          text-align: center; }
+        .testimonios div.row.containe-tes .columna3 .aliniar-test {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          margin: 8px 16px; }
+          .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 304px;
+            height: auto;
+            margin: 16px 8px;
+            flex-direction: column; }
+            .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-img-top {
+              width: 320px; }
+            .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: auto;
+              width: 320px;
+              height: 170px;
+              flex-direction: column;
+              padding: 8px;
+              font-family: "Nunito", sans-serif;
+              transition: all 500ms ease; }
+              .testimonios div.row.containe-tes .columna3 .aliniar-test .card-t .card-body-m:hover {
+                background-color: #FF3366; } }
 
 footer {
   background-color: #673398;
@@ -608,3 +726,175 @@ footer {
         flex-direction: row;
         align-items: center;
         width: 100%; } }
+
+.card-luis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 32px 0px;
+  min-width: 100%; }
+  .card-luis .row.f-luis {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .card-luis .row.f-luis .colfundador {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      min-width: 100%;
+      margin: 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px 0 #cacaca;
+      height: 300px; }
+      .card-luis .row.f-luis .colfundador .fotografia-l {
+        margin-right: 16px; }
+        .card-luis .row.f-luis .colfundador .fotografia-l img {
+          height: 273px;
+          background: cover;
+          margin: 0;
+          display: flex;
+          justify-content: flex-start;
+          border-radius: 8px; }
+      .card-luis .row.f-luis .colfundador .info-luis {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: "Nunito", sans-serif; }
+        .card-luis .row.f-luis .colfundador .info-luis .caption {
+          font-size: 1rem;
+          font-family: "Nunito", sans-serif; }
+        .card-luis .row.f-luis .colfundador .info-luis .titulo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3rem;
+          font-family: "Nunito", sans-serif;
+          margin: 16px 0px; }
+        .card-luis .row.f-luis .colfundador .info-luis .bajada-f {
+          display: flex;
+          font-family: "Nunito", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 200;
+          margin-top: 8px; }
+
+.staff-equipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  background-color: #fff;
+  width: 100%; }
+  .staff-equipo .area-staff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; }
+    .staff-equipo .area-staff .card-staf {
+      width: 340px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 0 10px 0 #cacaca;
+      border-radius: 8px;
+      background-color: #fff;
+      margin: 16px 8px;
+      height: auto; }
+      .staff-equipo .area-staff .card-staf .img-staff {
+        ddisplay: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 8px; }
+        .staff-equipo .area-staff .card-staf .img-staff img {
+          ddisplay: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: auto;
+          border-top-left-radius: 8px;
+          border-top-left-radius: 8px; }
+      .staff-equipo .area-staff .card-staf .textos-staff {
+        ddisplay: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 8px;
+        font-family: "Nunito", sans-serif; }
+        .staff-equipo .area-staff .card-staf .textos-staff .titulo-staff {
+          text-align: center;
+          font-family: "Nunito", sans-serif; }
+        .staff-equipo .area-staff .card-staf .textos-staff .bajada-staff {
+          font-size: 1.2rem;
+          font-family: "Nunito", sans-serif; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .card-luis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px 0px;
+    min-width: 100%; }
+    .card-luis .row.f-luis {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .card-luis .row.f-luis .colfundador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        margin: 8px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        box-shadow: 0 0 10px 0 #cacaca;
+        background-color: #673398;
+        height: auto; }
+        .card-luis .row.f-luis .colfundador .fotografia-l {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 16PX 0PX; }
+          .card-luis .row.f-luis .colfundador .fotografia-l img {
+            background: cover;
+            margin: 0;
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px; }
+        .card-luis .row.f-luis .colfundador .info-luis {
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-family: "Nunito", sans-serif; }
+          .card-luis .row.f-luis .colfundador .info-luis .caption {
+            font-size: 1rem; }
+          .card-luis .row.f-luis .colfundador .info-luis .titulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-family: "Nunito", sans-serif;
+            margin: 16px 0px; }
+          .card-luis .row.f-luis .colfundador .info-luis .bajada-f {
+            display: flex;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 200;
+            margin-top: 8px; } }

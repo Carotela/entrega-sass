@@ -4,8 +4,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 32px;
 .quienes{
-	margin: 8px 40px 8px 40px;
+	margin:8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,11 +16,14 @@
     padding: 8px;
     width: 100%;
 
-		h1.titulo  {
-			text-align: center;
+		h1.titulos  {
+			display:map-get($estilos, display);
+			justify-content:map-get($estilos,justify);
+			align-items:map-get($estilos,align);
 			font-family: $nunito;
 			fonn-size:$titulos;
 			color:$mirosa;
+			margin-bottom: 16px;
 
 		}
 		p.quiene-somos{
@@ -29,6 +33,7 @@
 			font-family:$nunito;
 		    font-size: $bajada;
 		    font-weight: 200;
+		    margin-top: 8px;
 
 		}
 }
@@ -38,8 +43,9 @@
 //QUE OFRECEOS//
 .ofecemos-ofrecemos{
 	width: 100%;
+	margin: 32px 0px;
 	.contenedor-ofrecemos{
-		margin: 8px 16px;
+		margin: 16px 0px;
 		padding:0;
 		display: flex;
 		flex-direction:column;
@@ -57,14 +63,17 @@
 				align-items: center;
 				width: 100%;
 				.sub-titulos{
-					display: flex;
-				    justify-content: center;
-				    align-items: center;
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
 				    margin: 24px;
-				    font-size: 2rem;
 				    font-family: $nunito;
 				    color:$mirosa;
-				}
+				    font-size: map-get($h2, size);
+					font-weight: map-get($h2, mediun);
+					padding: map-get($h2, padding);
+							}
+					}
 				.card-container{
 					display: flex;
 				    flex-direction:row;
@@ -72,6 +81,7 @@
 				    flex-wrap: wrap;
 				    align-items: center;
 				    width: 100%;
+				    margin-bottom: 16px;
 
 					.card{
 						 display: flex;
@@ -105,10 +115,9 @@
 			}	
 
 
-			}
-
-
 }
+
+
 
 //TESTIMONIOS//
 .testimonios{
@@ -118,58 +127,75 @@
 	justfy-content:center;
 	align-iten:center;
 	flex-direction:column;
+	margin-bottom: 32px;
 
 		div.row.containe-tes{
-			display: flex;
+			display:map-get($estilos, display);
+			justify-content:map-get($estilos,justify);
+			align-items:map-get($estilos,align);
+			flex-wrap: wrap;
 			width: 100%;
-			justfy-content:center;
-			align-iten:center;
+			
 
 				.columna3{
-					display: flex;
 					width: 100%;
-					flex-direction:column;
-					justfy-content:center;
-					align-iten:center;
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
+					flex-direction: column;
+					font-family: $nunito;
 
-						 h2.sub-titulos {
-							display: flex;
-							justify-content: center;
-	    					align-items: center;
-	    					font-size: 2rem;
-					    	font-family: $nunito;
-					    	color:$mirosa;
+						.sub-titulos {
+							display:map-get($estilos, display);
+							justify-content:map-get($estilos,justify);
+							align-items:map-get($estilos,align);
+						    color:$mirosa;
+						    font-size: map-get($h2, size);
+							font-weight: map-get($h2, mediun);
+							padding: map-get($h2, padding);
+							margin: 24px, 0px;
 						}
 
 						.aliniar-test{
 							display: flex;
 							flex-wrap: wrap;
 							justify-content: space-between;
+							width: 100%;
 
 							.card-t{
-								display: flex;
-							    justify-content: center;
-							    align-items: center;
-							    width: 400px;
+								display:map-get($estilos, display);
+								justify-content:map-get($estilos,justify);
+								align-items:map-get($estilos,align);
+							    width: 320px;
 							    height: 600px;
 							    margin:0 8px;
 							    flex-direction:column;
+							   
+															  
 
 							    	.card-img-top{
+							    		width: 320px;
 
 							    	}
 							    	.card-body-m{
 							    		background-color: $mivioleta;
-									    display: flex;
-									    justify-content: center;
-									    align-items: center;
+									    display:map-get($estilos, display);
+										justify-content:map-get($estilos,justify);
+										align-items:map-get($estilos,align);
 									    height: auto;
-									    width: 400px;
+									    width: 320px;
 									    height: 170px;
 									    flex-direction: column;
 									    padding: $padding2;
 									    color: $blanco;
-									    font-family:$nunito; 
+									    font-family:$nunito;
+									    transition: all 500ms ease;
+							    &:hover{
+
+								    
+								    background-color:$mirosa;
+								     
+								    	} 
 							    	}
 							}
 						}
@@ -183,10 +209,11 @@
 
  @media only screen and (min-width:320px) and (max-width: 768px){
 	.container-fluid{
-		display: flex;
-	    justify-content: center;
-	    align-items: center;
+		display:map-get($estilos, display);
+		justify-content:map-get($estilos,justify);
+		align-items:map-get($estilos,align);
 	    flex-direction: column;
+	    margin:8px 0px;
 	.quienes{
 		margin: 8px;
 	    display: flex;
@@ -206,9 +233,9 @@
 
 			}
 			p.quiene-somos{
-				display: flex;
-	    		justify-content: center;
-	    		align-items: center;
+				display:map-get($estilos, display);
+				justify-content:map-get($estilos,justify);
+				align-items:map-get($estilos,align);
 				font-family:$nunito;
 			    font-size: $bajada;
 			    font-weight: 200;
@@ -225,61 +252,59 @@
 	.contenedor-ofrecemos{
 		margin: 0px;
 		padding:0;
-		display: flex;
+		display:map-get($estilos, display);
+		justify-content:map-get($estilos,justify);
+		align-items:map-get($estilos,align);
 		flex-direction:column;
-		justify-content:center;
 		flex-wrap: wrap;
-		align-items: center;
 		width: 100%;
 		
 			.columna2{
-				display: flex;
-				display: flex;
+				display:map-get($estilos, display);
+				justify-content:map-get($estilos,justify);
+				align-items:map-get($estilos,align);
 				flex-direction:column;
-				justify-content:center;
 				flex-wrap: wrap;
-				align-items: center;
 				width: 100%;
 				margin: 0;
 				.sub-titulos{
-					display: flex;
-				    justify-content: center;
-				    align-items: center;
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
 				    margin:8px;
 				    font-size: 2rem;
 				    font-family: $nunito;
 				    color:$mirosa;
 				}
 				.card-container{
-					display: flex;
-				    flex-direction:column;
-				    justify-content:center;
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
 				    flex-wrap: wrap;
-				    align-items: center;
 				    width: 100%;
 				    margin: 0;
 
 					.card{
-						 display: flex;
+						display:map-get($estilos, display);
+						justify-content:map-get($estilos,justify);
+						align-items:map-get($estilos,align);
 					    flex-direction:column;
-					    justify-content:center;
-					    align-items: center;
 					    width:100%;
 					    padding: 8px;
-					    border-radius: 8px;
-					    box-shadow:0 0 10px 0 #cacaca;
+					    border-radius: $border-radius;
+	    				box-shadow:$box-shadows;
 					    height: auto;
 					    margin: 8px;
 					    flex-wrap: wrap;
 					     &:hover{
-								    	background: #FFCC01;
+						background:$mirosa;
 	    								
 								    }
 						img{}
 						.card-body{
 							.h4{
 								font-size: 1.3rem;
-    							text-align: center;
+    							align-items:map-get($estilos,align);
     							font-family: $nunito;
 
 							}
@@ -298,64 +323,81 @@
 //TESTIMONIOS//
 .testimonios{
 	width: 100%;
-	margin-top:8px;
-	display:flex;
-	justfy-content:center;
-	align-iten:center;
+	margin-top:16px;
+	justify-content:map-get($estilos,justify);
+	display:map-get($estilos, display);
+	align-items:map-get($estilos,align);
 	flex-direction:column;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
 
 		div.row.containe-tes{
-			display: flex;
+			justify-content:map-get($estilos,justify);
+			display:map-get($estilos, display);
+			align-items:map-get($estilos,align);
 			width: 100%;
-			justfy-content:center;
-			align-iten:center;
-
+			flex-wrap: wrap;
 				.columna3{
-					display: flex;
 					width: 100%;
-					flex-direction:column;
-					justfy-content:center;
-					align-iten:center;
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
+					flex-direction: column;
+					font-family: $nunito;
 
-						 h2.sub-titulos {
-							display: flex;
-							justify-content: center;
-	    					align-items: center;
-	    					font-size: 2rem;
-					    	font-family: $nunito;
-					    	color:$mirosa
-					    	text-align: center;
+						.sub-titulos {
+							display:map-get($estilos, display);
+							justify-content:map-get($estilos,justify);
+							align-items:map-get($estilos,align);
+						    color:$mirosa;
+						    font-size: map-get($h2, size);
+							font-weight: map-get($h2, mediun);
+							padding: map-get($h2, padding);
+							margin: 16px, 0px;
+							text-align: center;
 						}
 
 						.aliniar-test{
-							display: flex;
+							display:map-get($estilos, display);
+							justify-content:map-get($estilos,justify);
+							align-items:map-get($estilos,align);
 							flex-wrap: wrap;
-							justify-content: center;
+							width: 100%;
 
 							.card-t{
-								display: flex;
-							    justify-content: center;
-							    align-items: center;
-							    width: 100%px;
+								display:map-get($estilos, display);
+								justify-content:map-get($estilos,justify);
+								align-items:map-get($estilos,align);
+							    width: 304px;
 							    height: auto;
-							    margin: 0 8px;
+							    margin:0 8px;
 							    flex-direction:column;
+							   
+															  
 
 							    	.card-img-top{
+							    		width: 320px;
 
 							    	}
 							    	.card-body-m{
 							    		background-color: $mivioleta;
-									    display: flex;
-									    justify-content: center;
-									    align-items: center;
+									    display:map-get($estilos, display);
+										justify-content:map-get($estilos,justify);
+										align-items:map-get($estilos,align);
 									    height: auto;
-									    width: 100%;
-									    height: auto;
+									    width: 320px;
+									    height: 170px;
 									    flex-direction: column;
 									    padding: $padding2;
 									    color: $blanco;
-									    font-family:$nunito; 
+									    font-family:$nunito;
+									    transition: all 500ms ease;
+							    &:hover{
+
+								    
+								    background-color:$mirosa;
+								     
+								    	} 
 							    	}
 							}
 						}
@@ -365,57 +407,61 @@
 		}
 }
 
+	
+
+
 }
 
  @media  only screen and (min-width:769px) and (max-width:1023px){
  	//QUE OFRECEOS//
-.ofecemos-ofrecemos{
+.container-fluid.ofecemos-ofrecemos{
 	width: 100%;
+	display:map-get($estilos, display);
+	align-items:map-get($estilos,align);
 	.contenedor-ofrecemos{
 		margin: 8px 16px;
 		padding:0;
-		display: flex;
+		display:map-get($estilos, display);
+		justify-content:map-get($estilos,justify);
+		align-items:map-get($estilos,align);
 		flex-direction:column;
-		justify-content:center;
-		flex-wrap: wrap;
-		align-items: center;
 		width: 100%;
 		
 			.columna2{
-				display: flex;
-				display: flex;
+				display:map-get($estilos, display);
+				justify-content:map-get($estilos,justify);
+				align-items:map-get($estilos,align);
 				flex-direction:column;
-				justify-content:center;
 				flex-wrap: wrap;
-				align-items: center;
 				width: 100%;
-				.sub-titulos{
-					display: flex;
-				    justify-content: center;
-				    align-items: center;
-				    margin: 24px;
+				h2.sub-titulos{
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
+					width: 100%;
 				    font-size: 2rem;
 				    font-family: $nunito;
 				    color:$mirosa;
 				}
 				.card-container{
-					display: flex;
+					display:map-get($estilos, display);
+					align-items:map-get($estilos,align);
 				    flex-direction:row;
 				    justify-content:space-between;
 				    flex-wrap: wrap;
-				    align-items: center;
 				    width:100%;
 
 					.card{
-						display: flex;
+						display:map-get($estilos, display);
+						justify-content:map-get($estilos,justify);
+						align-items:map-get($estilos,align);
 					    flex-direction:column;
-					    justify-content:center;
-					    align-items: center;
 					    width: 240px;
 					    padding: 8px;
 					    border-radius: 8px;
 					    box-shadow:0 0 10px 0 #cacaca;
 					    height: auto;
+					    margin: 8px 0px;
 					    
 
 					     &:hover{
@@ -444,4 +490,92 @@
 
 }
 
- }
+//TESTIMONIOS//
+.testimonios{
+	width: 100%;
+	margin-top:16px;
+	justify-content:map-get($estilos,justify);
+	display:map-get($estilos, display);
+	align-items:map-get($estilos,align);
+	flex-direction:column;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+
+		div.row.containe-tes{
+			justify-content:map-get($estilos,justify);
+			display:map-get($estilos, display);
+			align-items:map-get($estilos,align);
+			width: 100%;
+			flex-wrap: wrap;
+				.columna3{
+					width: 100%;
+					display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
+					flex-direction: column;
+					font-family: $nunito;
+
+						.sub-titulos {
+							display:map-get($estilos, display);
+							justify-content:map-get($estilos,justify);
+							align-items:map-get($estilos,align);
+						    color:$mirosa;
+						    font-size: map-get($h2, size);
+							font-weight: map-get($h2, mediun);
+							padding: map-get($h2, padding);
+							margin: 16px, 0px;
+							text-align: center;
+						}
+
+						.aliniar-test{
+							display:map-get($estilos, display);
+							justify-content:space-between;
+							align-items:map-get($estilos,align);
+							flex-wrap: wrap;
+							width: 100%;
+							margin:8px 16px;
+
+							.card-t{
+								display:map-get($estilos, display);
+								justify-content:map-get($estilos,justify);
+								align-items:map-get($estilos,align);
+							    width: 304px;
+							    height: auto;
+							    margin:16px 8px;
+							    flex-direction:column;
+							   
+															  
+
+							    	.card-img-top{
+							    		width: 320px;
+
+							    	}
+							    	.card-body-m{
+							    		display:map-get($estilos, display);
+										justify-content:map-get($estilos,justify);
+										align-items:map-get($estilos,align);
+									    height: auto;
+									    width: 320px;
+									    height: 170px;
+									    flex-direction: column;
+									    padding: $padding2;
+									    font-family:$nunito;
+									    transition: all 500ms ease;
+							    &:hover{
+
+								    
+								    background-color:$mirosa;
+								     
+								    	} 
+							    	}
+							}
+						}
+
+
+				}
+		}
+}
+
+
+}
+

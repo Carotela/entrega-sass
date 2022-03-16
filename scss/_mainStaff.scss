@@ -1,0 +1,257 @@
+ .card-luis{
+	display:map-get($estilos, display);
+	justify-content:map-get($estilos,justify);
+	align-items:map-get($estilos,align);
+    flex-direction: row;
+    margin: 32px 0px;
+    min-width: 100%;
+    
+
+
+		.row.f-luis{
+			display:map-get($estilos, display);
+			align-items:map-get($estilos,align);
+			flex-direction: row;
+			flex-wrap: wrap;
+				
+				.colfundador{
+					display: flex;
+					justify-content:flex-start;
+					align-items:map-get($estilos,align);
+					min-width: 100%;
+					margin: 0;
+					border-radius: $border-radius;
+    				box-shadow:$box-shadows;
+    				height: 300px;
+
+						.fotografia-l{
+							margin-right:16px;
+						
+							
+									img{
+									height: 273px;
+								    background: cover;
+								    margin: 0;
+								    display: flex;
+								    justify-content:flex-start;
+								    border-radius: $border-radius;
+
+
+
+								    									
+										}
+									}
+						
+						.info-luis{
+								   color: $blanco;
+								    display:map-get($estilos, display);
+									justify-content:map-get($estilos,justify);
+									align-items:flex-start;
+									flex-direction: column;
+									font-family: $nunito;
+
+										.caption{
+											font-size: 1rem;
+											font-family: $nunito;	
+										}
+
+										.titulo{
+											display:map-get($estilos, display);
+											justify-content:map-get($estilos,justify);
+											align-items:map-get($estilos,align);											
+										    font-size: 3rem;
+										    font-family: $nunito;
+										    margin:16px 0px;
+										}
+
+										.bajada-f{
+											display: flex;
+								    		font-family:$nunito;
+										    font-size:1.5rem;
+										    font-weight: 200;
+										    margin-top: 8px;
+										}
+					
+									}
+
+			}
+
+		}
+
+
+}
+
+.staff-equipo{
+	display:map-get($estilos, display);
+	justify-content:map-get($estilos,justify);
+	align-items:map-get($estilos,align);
+	flex-direction: row;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+
+    	.area-staff{
+    		display:map-get($estilos, display);
+			justify-content:map-get($estilos,justify);
+			align-items:map-get($estilos,align);
+    		width: 100%;
+    		flex-wrap: wrap;
+
+    			.card-staf{
+				    width: 340px;
+				    display:map-get($estilos, display);
+					justify-content:map-get($estilos,justify);
+					align-items:map-get($estilos,align);
+				    flex-direction: column;
+				    justify-content: center;
+				    flex-wrap: wrap;
+				    box-shadow:$box-shadows;
+				    border-radius:$border-radius;
+				    background-color: #fff;
+				    margin: 16px 8px;
+				    height:auto;
+				    
+				    	.img-staff{
+						    ddisplay:map-get($estilos, display);
+							justify-content:map-get($estilos,justify);
+							align-items:map-get($estilos,align);
+						    width: 100%;
+						    padding: 8px;
+
+						    	img{
+
+						    		ddisplay:map-get($estilos, display);
+									justify-content:map-get($estilos,justify);
+									align-items:map-get($estilos,align);
+						    		width: 100%;
+								    height: auto;
+								    border-top-left-radius: 8px;
+								    border-top-left-radius: 8px;
+														    	}
+
+    
+    								}
+
+    					.textos-staff{
+							    ddisplay:map-get($estilos, display);
+								justify-content:map-get($estilos,justify);
+								align-items:map-get($estilos,align);
+							    flex-direction: column;
+							    padding:$padding2;
+							    font-family: $nunito;
+							    	
+							    	.titulo-staff{
+									    text-align: center;
+									    font-family: $nunito;
+									    }
+
+						.bajada-staff{
+						    font-size: 1.2rem;
+						    font-family: $nunito;
+						    }
+
+
+							    
+							    }			
+
+				    }
+
+    	}
+    	
+}
+
+ @media only screen and (min-width:320px) and (max-width: 768px){
+ 	.card-luis{
+	display:map-get($estilos, display);
+	justify-content:map-get($estilos,justify);
+	align-items:map-get($estilos,align);
+    flex-direction: column;
+    margin: 32px 0px;
+    min-width: 100%;
+
+
+		.row.f-luis{
+			display:map-get($estilos, display);
+			align-items:map-get($estilos,align);
+			flex-direction: column;
+			flex-wrap: wrap;
+				
+				.colfundador{
+					display: flex;
+					justify-content:center;
+					align-items:map-get($estilos,align);
+					min-width: 100%;
+					margin: 8px;
+					flex-direction: column;
+					flex-wrap: wrap;
+					border-radius: $border-radius;
+    				box-shadow:$box-shadows;
+    				background-color: $mivioleta;
+    				height: auto;
+
+						.fotografia-l{
+							width: 100%;
+							height: auto;
+							display:map-get($estilos, display);
+							justify-content:map-get($estilos,justify);
+							align-items:map-get($estilos,align);
+							margin: 16PX 0PX;
+
+						
+							
+									img{
+									background: cover;
+								    margin: 0;
+								    display: flex;
+								    display:map-get($estilos, display);
+									justify-content:map-get($estilos,justify);
+									align-items:map-get($estilos,align);
+								    border-radius: $border-radius;
+
+
+
+								    									
+										}
+									}
+						
+						.info-luis{
+								   color: $blanco;
+								    display:map-get($estilos, display);
+									justify-content:map-get($estilos,justify);
+									align-items:map-get($estilos,align);
+									flex-direction: column;
+									font-family: $nunito;
+
+										.caption{
+											font-size: 1rem;
+												
+										}
+
+										.titulo{
+											display:map-get($estilos, display);
+											justify-content:map-get($estilos,justify);
+											align-items:map-get($estilos,align);											
+										    font-size: 1.5rem;
+										    font-family: $nunito;
+										    margin:16px 0px;
+										}
+
+										.bajada-f{
+											display: flex;
+								    		font-family:$nunito;
+										    font-size:1.5rem;
+										    font-weight: 200;
+										    margin-top: 8px;
+										}
+					
+									}
+
+			}
+
+		}
+
+
+
+	}
+
+ }

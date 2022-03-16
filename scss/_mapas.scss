@@ -1,0 +1,33 @@
+$estilos:(
+	display: flex,
+    justify: center,
+    align: center
+
+	);
+
+$h1:(
+ 	size: 3rem,
+ 	mediun: 400,
+ 	
+	);
+
+
+
+.titulos{
+	font-size: map-get($h1, size);
+	font-weight: map-get($h1, mediun);
+	
+	}
+
+$h2:(
+	size: 2.5rem,
+	mediun: 400,
+ 	padding: 8px
+
+	);
+
+.sub-titulos{
+	font-size: map-get($h2, size);
+	font-weight: map-get($h2, mediun);
+	padding: map-get($h2, padding);
+}

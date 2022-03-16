@@ -1,5 +1,6 @@
-header{
+header.header{
 	background: $mivioleta;
+	margin: 0;
 
 	.row{
 		margin: 0;
@@ -23,6 +24,7 @@ header{
     						 &:hover{
 								    	border-bottom: 2px solid yellow;
 	    								font-weight: 500;
+	    								width: auto;
 								    }
     					}
     				}
@@ -35,12 +37,11 @@ header{
 		}	
 
  @media only screen and (max-width: 768px){
- 	header{
+ 	header.header{
  	display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    margin: 0 8px;
     width: 100%;
     flex-wrap: wrap;
     .row{
@@ -51,32 +52,49 @@ header{
 					}
 	
 				}
+		#navbarNav{
+				background: $mivioleta;
+				display: flex;
+    			justify-content: flex-end;
+    			font-family: $nunito;
+    			
+    			ul{
+    				li{
+    					a{
+    						 &:hover{
+								    	background-color: $mirosa;
+	    								
+								    }
+    					}
+    				}
+    			}
+    			
+			}		
 		}
 
  	}
 }
  @media  only screen and (min-width:769px) and (max-width:1023px){
- 		header{
- 	display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    margin: 0 8px;
-    width: 100%;
-    flex-wrap: wrap;
-    .row{
-    	.navbar{
-			img.logo{
-				width: 100px;
-				height: 100px;
-					}
-	
+ 		header.header{
+		 	display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding: 8px;
+		    width: 100%;
+		    flex-wrap: wrap;
+		    .row{
+		    	.navbar{
+					img.logo{
+						width: 100px;
+						height: 100px;
+							}
+			
+						}
 				}
-		}
 
- 	}
+		 	}
 
- }
+}
 
 
 		 	

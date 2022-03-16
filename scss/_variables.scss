@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700 &family=Truculenta:wght@200;400;600&display=swap');
+
+
 //variables sass//
 //paleta de color//
 $mivioleta:#673398;
@@ -6,8 +9,6 @@ $blanco:#fff;
 $negro:#FF3366;
 
 //Tipografias//
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700
-&family=Truculenta:wght@200;400;600&display=swap');
 
 $nunito:'Nunito', sans-serif;
 $truculenta:'Truculenta', sans-serif;
@@ -27,3 +28,13 @@ $sub-titulos:3rem;
 $caption:2rem;
 $bajada:1.8rem;
 $texto:1rem;
+
+// MIXIN//
+@mixin color-background($color, $background){
+	color:$color;
+	background-color: $background;
+}
+
+.card-body-m{
+	@include color-background($blanco,#673398);
+}

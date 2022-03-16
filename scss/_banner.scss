@@ -16,6 +16,7 @@ $truculenta:'Truculenta', sans-serif;
     background-repeat: no-repeat;
     border-radius: none;
     overflow: hidden;
+    margin-bottom: 32px;
     }
 
 @keyframes movimiento{
@@ -54,10 +55,11 @@ $truculenta:'Truculenta', sans-serif;
     font:$nunito;
     }
 
-.bajada-banner{
+h3.bajada-banner{
     font-size: 2rem;
     color:$blanco;
     padding: 8px 0;
+    font:$nunito;
 
    
     }
